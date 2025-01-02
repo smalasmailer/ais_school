@@ -16,7 +16,7 @@ function checkTelegramAuthorization($auth_data) {
     $data_check_string = implode("\n", $data_check_arr);
 
     // Хешируем строку
-    $secret_key = hash('sha256', '8074377850:AAH90mx_5WrRz9527Inx0AcyeBgUYjDC9nY', true);
+    $secret_key = hash('sha256', 'BOTFATHER_TOKEN', true);
     $hash = hash_hmac('sha256', $data_check_string, $secret_key);
 
     // Сравниваем хеши
