@@ -26,7 +26,6 @@ $password = 'секрет';
 $db = 'shkolnik';
 $roles = array("Учитель", "Завуч");
 $hideroles = array("Администратор", "Директор", "Завуч", "Учитель", "Ученик", "ОУ");
-$hftoken = "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";
 
 $conn = new mysqli($host, $user, $password, $db);
 if ($conn->connect_error) {
