@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    text-align: center;
+    background-color: white;
+}
+input, button, select{
+    margin: 5px;
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    width: 250px;
+    background-color: lightgray;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+header {
+    background-color: #4CAF50; /* Цвет фона шапки */
+    padding: 10px 15px; /* Отступы внутри шапки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky; /* Закрепить шапку сверху */
+    top: 0;
+    z-index: 1000; /* Обеспечить отображение поверх контента */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для разделения */
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Расстояние между ссылками */
+}
+
+nav li {
+    list-style: none; /* Убираем маркеры списка */
+}
+
+nav a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: white; /* Цвет текста ссылок */
+    font-size: 16px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px 10px; /* Внутренние отступы ссылок */
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s ease; /* Плавный эффект при наведении */
+}
+nav img{
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+.birthday{
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+.lastmarks{
+    display: flex;
+    justify-content: center;
+}
+
+.goodmark{
+    background-color: lightgreen;
+}
+.mediumark{
+    background-color: orange;
+}
+.badmark{
+    background-color: lightcoral;
+}
+.graymark{
+    background-color: gray;
+}
+.markinfo{
+    padding: 0px;
+    width: 100px;
+}
+.markinfo p, h3, h4{
+    margin: 0;
+}
+.markinfo h2{
+    margin: 5px;
+}
+
+.post{
+    background-color: lightgrey;
+    padding: 8px;
+}
+
+.lesson{
+    background-color: lightgreen;
+    max-width: 300px;
+}
+.nomargin{
+    margin: 0;
+}

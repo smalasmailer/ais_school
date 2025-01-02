@@ -1,0 +1,196 @@
+@import url("/Lato-Regular.ttf");
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: #F4F4F4;
+    text-align: center;
+}
+
+.container {
+    padding: 10px;
+}
+
+/* Заголовок и меню */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #005cf1;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu > li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu > li > a:hover {
+    background-color: #0041A8;
+    transform: scale(1.05);
+}
+
+/* Выпадающее меню */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #F0F0F0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Кнопки и формы */
+button, input[type="submit"], select {
+    padding: 12px;
+    background-color: #3c87ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0048bb;
+    -webkit-box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px -11px rgba(66, 68, 90, 1);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Секции статистики */
+.shortstats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.statsdiv {
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.statsgreen {
+    background-color: #7BB43C;
+}
+
+.statsred {
+    background-color: red;
+}
+
+.statsdiv:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.statsgreen:hover {
+    background-color: green;
+}
+
+.statsred:hover {
+    background-color: brown;
+}
+
+/* Ввод и текстовые поля */
+input, textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.error{
+    color: darkred;
+}
+
+/* Форма редактирования */
+.editform {
+    background-color: #707070;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Часы и дата */
+#clock, #date {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+table {
+    border-collapse: collapse; /* Убирает двойные линии между ячейками */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px; /* Внутренние отступы */
+    border: 1px solid #ddd; /* Рамки вокруг ячеек */
+}
+
+th {
+    background-color: #f4f4f4; /* Фон заголовка */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Чередование строк */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Подсветка строки при наведении */
+}

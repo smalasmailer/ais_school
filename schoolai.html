@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа AI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        @keyframes ani {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        
+        * {
+            font-family: "Jost", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #161b22;
+            position: sticky;
+            top: 0;
+            max-width: 1000px;
+            z-index: 1000;
+            animation: ani 1s forwards;
+        }
+        header nav a {
+            color: #c9d1d9;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to bottom, #0d1117, #161b22 70%);
+            animation: ani 1s forwards;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .hero input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background: #238636;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background: #2ea043;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: linear-gradient(145deg, #1a2029, #141a21);
+            border-radius: 12px;
+            padding: 25px;
+            flex: 1;
+            max-width: 500px;
+            text-align: center;
+            color: #e1e4e8;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 15px;
+            animation: ani 1s forwards;
+        }
+        .card h2 {
+            margin: 0 0 10px;
+        }
+        .card p {
+            margin: 0 0 20px;
+        }
+        .card button {
+            padding: 10px 20px;
+            background: #238636;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background: #2ea043;
+        }
+        .self-message{
+            text-align: left;
+        }
+        .answer-message{
+            text-align: right;
+        }
+        .important{
+            background-color: lightcoral;
+            padding: 5px;
+            border-radius: 15px;
+            transition: 0.3s;
+            color: black;
+            max-width: 500px;
+        }
+        .important:hover{
+            background-color: #161b22;
+            color: white;
+        }
+    </style>
+    <meta name="description" content="Интегрируйте Школа AI в образовательный процесс: генерируйте материал к урокам, создавайте интерактивные карточки и многое другое!">
+</head>
+<body>
+    <header>
+        <h1>Школа AI</h1>
+        <nav>
+            <a href="#cards">Преимущества</a>
+            <a href="#plans">Тарифы</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Внедряйте ИИ в образовательный процесс</h1>
+        <p>Генерируйте темы уроков, интерактивные уроки. Помогайте ученикам разбирать тему</p>
+        <div>
+            <a href="index.php"><button>Использовать в журнале</button></a>
+            <a href="#plans"><button>Цены</button></a>
+            <a href="#example"><button>Примеры использования</button></a>
+        </div>
+    </section>
+    <section class="cards" id="cards">
+        <div class="card">
+            <h2>Учителю</h2>
+            <p>Генерация материалов уроков в один клик за 5 минут прямо из КТП</p>
+            <p>Хранение диалогов в вашем профиле абсолютно бесплатно</p>
+        </div>
+        <div class="card">
+            <h2>Ученику</h2>
+            <p>Если ученик не понял тему урока и хочет повторить её, то он может воспользоваться Школой AI прямо из дневника!</p>
+            <p>Хранение диалогов в вашем профиле абсолютно бесплатно!</p>
+        </div>
+    </section>
+    <center><h1>Цены</h1></center>
+    <section class="cards" id="plans">
+        <div class="card">
+            <h2>Бесплатный тариф</h2>
+            <ul>
+                <p>Для всех:</p>
+                <li>Хранение до 5 диалогов</li>
+                <li>До 15 запросов в день</li><br>
+                <p>Учителю:</p>
+                <li>Генерация материалов до 3 тем в день</li>
+                <li>Генерация до 5 интерактивных заданий в день</li><br>
+                <p>Ученику:</p>
+                <li>До 3 разборов тем в день</li>
+                <li>До 3 разборов ДЗ в день</li>
+                <li>До 3 разборов интерактивных заданий в день</li>
+            </ul>
+            <h2>0.00 РУБ.</h2>
+            <h3>Уже в 2025 году</h3>
+        </div>
+        <div class="card">
+            <h2>PRO</h2>
+            <ul>
+                <p>Для всех:</p>
+                <li>Хранение до 10 диалогов</li>
+                <li>До 30 запросов в день</li><br>
+                <p>Учителю:</p>
+                <li>Генерация материалов до 6 тем в день</li>
+                <li>Генерация до 10 интерактивных заданий в день</li><br>
+                <p>Ученику:</p>
+                <li>До 6 разборов тем в день</li>
+                <li>До 6 разборов ДЗ в день</li>
+                <li>До 6 разборов интерактивных заданий в день</li>
+            </ul>
+            <h2>Уже в 2025 году</h2>
+        </div>
+    </section>
+    <center><h1>Примеры использования</h1></center>
+    <section class="hero" id="example">
+        <h1>Учителю</h1>
+        <div class="dialog">
+            <div class="self-message">
+                <p>Вы: <span class="important">сгенерируй интерактивное задание</span> для темы "Сложение" в 1-м классе</p>
+            </div>
+            <div class="answer-message">
+                <p>Школа AI: Конечно! Держите интерактивное задание:<br></p>
+                <center class="important">
+                    <h2>Восстановите правильный порядок</h2>
+                    <table>
+                        <tr><th>Слагаемое</th><th>Слагаемое</th><th>Сумма</th></tr>
+                        <tr><td>2</td><td>3</td><td>6</td></tr>
+                        <tr><td>2</td><td>2</td><td>5</td></tr>
+                        <tr><td>5</td><td>3</td><td>4</td></tr>
+                        <tr><td>2</td><td>2</td><td>8</td></tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <h1>Ученику</h1>
+        <div class="dialog">
+            <div class="self-message">
+                <p>Вы: помоги <span class="important">разобрать интерактивное задание</span>:</p>
+                <center class="important">
+                    <h2>Восстановите правильный порядок</h2>
+                    <table>
+                        <tr><th>Слагаемое</th><th>Слагаемое</th><th>Сумма</th></tr>
+                        <tr><td>2</td><td>3</td><td>6</td></tr>
+                        <tr><td>2</td><td>2</td><td>5</td></tr>
+                        <tr><td>5</td><td>3</td><td>4</td></tr>
+                        <tr><td>2</td><td>2</td><td>8</td></tr>
+                    </table>
+                </center>
+            </div>
+            <div class="answer-message">
+                <p>Школа AI: Конечно! Я помогу тебе разобрать данное задание. Подскажи, есть ли у тебя трудности с сложением?</p>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <h1>Родителю</h1>
+        <div class="dialog">
+            <div class="self-message">
+                <p>Вы: дай несколько советов по тому, как <span class="important">заставить ребенка учиться</span></p>
+            </div>
+            <div class="answer-message">
+                <p>Школа AI: Конечно! Я помогу тебе с этим. Во-первых, никогда...</p>
+            </div>
+            <div class="self-message">
+                <p>Вы: Спасибо! А теперь помоги решить данное интерактивное задание:</p>
+                <center class="important">
+                    <h2>Восстановите правильный порядок</h2>
+                    <table>
+                        <tr><th>Слагаемое</th><th>Слагаемое</th><th>Сумма</th></tr>
+                        <tr><td>2</td><td>3</td><td>6</td></tr>
+                        <tr><td>2</td><td>2</td><td>5</td></tr>
+                        <tr><td>5</td><td>3</td><td>4</td></tr>
+                        <tr><td>2</td><td>2</td><td>8</td></tr>
+                    </table>
+                </center>
+            </div>
+            <div class="answer-message">
+                <p>Школа AI: Я помогу тебе решить данное задание...</p>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <h1>Разработчикам</h1>
+        <div class="dialog">
+            <div class="self-message">
+                <p>Вы: <span class="important">Как исправить ошибку</span> в Callback-скрипте?
+            </div>
+            <div class="answer-message">
+                <p>Школа AI: Ошибка заключается в том, что вы импортируете файл, которого несуществует в данной директории.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

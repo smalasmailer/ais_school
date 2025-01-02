@@ -1,0 +1,27 @@
+input{
+    background-color: green;
+    color:white;
+    border:1px solid black;
+    width:250px;
+    padding:5px;
+    border-radius:5px;
+}
+input::placeholder{
+    color:white;
+}
+input[type='submit'] {
+    width: 10%;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+    color:black;
+}
